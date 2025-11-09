@@ -3,14 +3,14 @@ Classification aims to predict a discrete, categorical label (e.g., dog, cat, or
 Regression aims to predict a continuous, numerical value (e.g., 45.7, 100,000).
 
 
-Linear Regression,                  Regression,"Predicts a continuous output value (e.g., house price, temperature) by fitting a straight line (or hyperplane) to the data."
-Logistic Regression,                Classification,"Predicts the probability of an instance belonging to a specific class (e.g., Yes/No, Spam/Not Spam). It's primarily used for binary classification."
-Decision Trees,                      Both,Uses a tree-like structure of decisions (based on features) to predict an output. Can handle both continuous (regression) and categorical (classification) data.
-Random Forests,                     Both,An ensemble method that builds multiple Decision Trees and merges their predictions to get a more accurate and stable result. Excellent for both tasks.
-Support Vector Machines (SVM)      ,Classification (and Regression: SVR),"Finds the optimal hyperplane that best separates different classes in the feature space, maximizing the margin between them."
-K-Nearest Neighbors (KNN),          Both,"A non-parametric, instance-based model that classifies a new data point based on the majority class of its 'k' nearest neighbors in the feature space."
-Naive Bayes,                        Classification,"A probabilistic classifier based on Bayes' theorem, assuming that features are independent of each other given the class."
-Gradient Boosting,                   Both,"An ensemble technique that builds models sequentially, where each new model corrects the errors of the previous ones. Includes models like XGBoost and LightGBM."
+Linear Regression,                  Regression,--------------"Predicts a continuous output value (e.g., house price, temperature) by fitting a straight line (or hyperplane) to the data."
+Logistic Regression,                Classification,----------"Predicts the probability of an instance belonging to a specific class (e.g., Yes/No, Spam/Not Spam). It's primarily used for binary classification."
+Support Vector Machines (SVM),      Classification------------(and Regression: SVR),"Finds the optimal hyperplane that best separates different classes in the feature space, maximizing the margin between them."
+Naive Bayes,                        Classification,-----------"A probabilistic classifier based on Bayes' theorem, assuming that features are independent of each other given the class."
+Decision Trees,                     Both,-------------------- Uses a tree-like structure of decisions (based on features) to predict an output. Can handle both continuous (regression) and categorical (classification) data.
+K-Nearest Neighbors (KNN),          Both,---------------------"A non-parametric, instance-based model that classifies a new data point based on the majority class of its 'k' nearest neighbors in the feature space."
+Gradient Boosting,                  Both,--------------------"An ensemble technique that builds models sequentially, where each new model corrects the errors of the previous ones. Includes models like XGBoost and LightGBM."
+Random Forests,                     Both,---------------------An ensemble method that builds multiple Decision Trees and merges their predictions to get a more accurate and stable result. Excellent for both tasks.
 
 Linear, logistic, random forest , decision tree, 
 pca, ensemble techniques like xg , gradient boosts, 
