@@ -1,0 +1,50 @@
+linear regression
+-----------------
+"Predicts a continuous output value (e.g., house price, temperature) by fitting a straight line (or hyperplane) to the data."
+ h(x)=hypothesis function
+ y=h(x)=w0+w1x 
+
+
+  y
+ 10|   op     . *
+ 8 |   *  *.   * up
+ 6 | *   .
+ 4 | *.   *
+ 2 |.______________x
+    1 2 3 4 5 6 7 8
+
+--training example(x,y)
+--y=h(x)=predicted value
+--predicted error=h(x)-y
+minimize predicted error using cost function or mean squared error function
+
+op-------over predictions
+up-------under prediction
+
+ . =dots are best possible line(predicted value)
+ * =actual value
+
+ try to minimize predicted errors (.)
+
+
+
+cost function E(W) or or mean squared error
+-------------------------------------------
+
+Σ=summantion
+
+h(x)=h(w)(x(i))=w0+w1x=y
+
+          m
+E(w)=1/2m Σ(h(w)(x(i))-y(i))^2
+          i=1
+
+--measure of how close the predictions are to the actual y-values
+--average over all trainings instances
+--mean squared error E(W) cost function
+
+--choose the values w so that E(W) is minimize
+
+w= [w1,w2] = in h(X)=w1+w2x
+
+based w1 and w2 stright line direction and values change

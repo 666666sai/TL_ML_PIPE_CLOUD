@@ -1,3 +1,17 @@
+How to train a model
+
+                                                   predicted value
+                                                           ^
+                                                           |
+                                                           |
+                                                           |
+        training set-----> learning algoritham ------->hypothesis function
+                                                           |
+                                                           |
+                                                           |
+                                                   x continuous value
+
+
 Classification aims to predict a discrete, categorical label (e.g., dog, cat, or Class A, Class B).
 
 Regression aims to predict a continuous, numerical value (e.g., 45.7, 100,000).
