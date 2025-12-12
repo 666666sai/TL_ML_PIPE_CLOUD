@@ -26,7 +26,21 @@ K-Nearest Neighbors (KNN),          Both,---------------------"A non-parametric,
 Gradient Boosting,                  Both,--------------------"An ensemble technique that builds models sequentially, where each new model corrects the errors of the previous ones. Includes models like XGBoost and LightGBM."
 Random Forests,                     Both,---------------------An ensemble method that builds multiple Decision Trees and merges their predictions to get a more accurate and stable result. Excellent for both tasks.
 
+
+1. The Hierarchy
+        Feature: The Question.
+        Category: The Options for the answer.
+        Class: The Result/Grade at the end.
+        Types of Naive Bayes Models (and When to Use Each)
+
+Term,                   Symbol,                 Role,                                Definition,                                           Example
+Feature,                X (Column),             The Input,              An attribute or property of the data you are observing.,        """Color"""
+Category,               Xvalue​,                 The Input Value,        The specific distinct groups inside a Feature.,                """Red"", ""Green"", ""Blue"""
+Class,                  y (Target),             The Output,             The final label or answer the model tries to predict.,         """Apple"" vs. ""Banana"""
+
+
+
 Linear, logistic, random forest , decision tree, 
 pca, ensemble techniques like xg , gradient boosts, 
 smote  l1 l2 pruning, light , ada 
-svm, naive bayes....oversampling , undersampling techs
+svm, naive bayes....oversampling , undersampling techs, over fitting

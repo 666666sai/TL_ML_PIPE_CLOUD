@@ -1,0 +1,103 @@
+linear regression
+-----------------
+"Predicts a continuous output value (e.g., house price, temperature) by fitting a straight line (or hyperplane) to the data."
+ h(x)=hypothesis function
+ y=h(x)=w0+w1x 
+
+
+  y
+ 10|   op     . *
+ 8 |   *  *.   * up
+ 6 | *   .
+ 4 | *.   *
+ 2 |.______________x
+    1 2 3 4 5 6 7 8
+
+--training example(x,y)
+--y=h(x)=predicted value
+--predicted error=h(x)-y
+minimize predicted error using cost function or mean squared error function
+
+op-------over predictions
+up-------under prediction
+
+ . =dots are best possible line(predicted value)
+ * =actual value
+
+ try to minimize predicted errors (.)
+
+
+*******************************************
+cost function E(W) or or mean squared error
+-------------------------------------------
+
+Σ=summantion
+
+h(x)=h(w)(x(i))=w0+w1x=y
+
+                        m
+cost function E(w)=1/2m Σ(h(w)(x(i))-y(i))^2
+                        i=1
+
+--measure of how close the predictions are to the actual y-values
+--average over all trainings instances
+--mean squared error E(W) cost function
+
+--choose the values w so that E(W) is minimize
+
+w= [w1,w2] = in h(X)=w1+w2x
+
+based w1 and w2 stright line direction and values change
+
+w1 vs E(w) get u shaped curve
+
+********************************************************
+Gradient descent for optimize/minimize the cost function
+--------------------------------------------------------
+efficent and scalable to thousands of parameters
+used in many applications to minimize functions
+basic algotitham
+start with w , keep changing w little by little to get minimum cost function
+
+*******************************************************
+issues with Gradient descent
+---------------------------------------------------------
+if we have multiple local minima
+it can only find a one local minima not global minima
+---->but mean squared error cost function in linear regression is always a convex function
+    so no issue of local minima, it always has a one minima, it always converges to global minima
+Gradient descent=w=w-α*(α/αw1)E(w)
+α=learning rate
+α should be small enough to converge
+α should not be too small to take too long to converge
+α should not be too large to overshoot the minima
+
+---------------------------------------------------------
+before implementing make sure to feature scaling and mean normalization
+normalization is if data is scattered in large range of values make it in small range
+normalization formula:
+x(i)=(x(i)-mean(x))/range(x)---like statistics
+feature scaling is make sure all features are in same range
+
+---------------------------------------------------------
+if we have multiple variables/features
+h(w)(x)=w0+w1x1+w2x2+...+wnxn, we can for polynomial regression also
+Gradient descent for multiple variables, so the curve is non-linear
+
+
+
+steps to train linear regression model
+------------------------------------------- 
+1.Collect data
+2.Prepare data(cleaning,handling missing data,feature scaling,normalization)
+3.Choose model(hypothesis function)
+4.Train model(optimize cost function using gradient descent)
+5.Test model(evaluate model performance using test data)
+6.Use model(make predictions on new data)
+7.Monitor and maintain model(retrain model as needed with new data)
+------------------------------------------- 
+
+References:
+1.https://www.coursera.org/learn/machine-learning
+
+2.https://en.wikipedia.org/wiki/Linear_regression
